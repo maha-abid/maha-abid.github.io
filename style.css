@@ -73,10 +73,15 @@ a:hover { text-decoration: underline; }
   gap: 24px; min-height: 64px;
 }
 .brand {
-  font-weight: 650; font-size: 17px; letter-spacing: -0.01em;
+  display: inline-flex; align-items: center; gap: 10px;
+  font-weight: 650; font-size: 17px; letter-spacing: -0.015em;
   color: var(--text);
 }
-.brand:hover { text-decoration: none; color: var(--accent); }
+.brand:hover { text-decoration: none; }
+.brand:hover .brand-name { color: var(--accent); }
+.mark { width: 30px; height: 27px; display: block; flex: none; }
+.mark-accent { stroke: var(--accent); }
+.brand-name { transition: color .15s; }
 .site-header nav { display: flex; gap: 26px; }
 .site-header nav a { color: var(--text-soft); font-size: 15px; }
 .site-header nav a:hover { color: var(--accent); text-decoration: none; }
@@ -226,3 +231,25 @@ ul.plain li {
   html { scroll-behavior: auto; }
   * { transition: none !important; }
 }
+
+
+/* ---------- compact project items ---------- */
+.item {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 22px;
+  display: flex; flex-direction: column;
+  transition: border-color .15s, transform .15s;
+}
+.item:hover { border-color: var(--accent); transform: translateY(-2px); }
+.item h3 { margin: 0 0 9px; font-size: 16.5px; }
+.item h3 a { color: var(--text); }
+.item h3 a::after { content: " \2197"; color: var(--accent); font-size: .85em; }
+.item h3 a:hover { color: var(--accent); text-decoration: none; }
+.item p {
+  margin: 0 0 16px; flex: 1;
+  color: var(--text-soft); font-size: 14.5px; line-height: 1.6;
+}
+.item .tags { margin: 0; }
+.section-note strong { color: var(--text); font-weight: 640; }

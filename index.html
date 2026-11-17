@@ -3,10 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Maha Abid — Senior WordPress Developer &amp; Linux Server Admin</title>
-<meta name="description" content="Senior WordPress developer with 7 years of experience. I build custom WordPress sites and run the Linux servers they sit on — Nginx, PHP-FPM, MySQL, WP-CLI.">
+<title>Maham Abid — Senior WordPress Developer &amp; Linux Server Admin</title>
+<meta name="description" content="Senior WordPress developer with 7 years of experience building product sites and client websites — and running the Linux servers they sit on. Nginx, PHP-FPM, MySQL, WP-CLI.">
+<meta property="og:title" content="Maham Abid — Senior WordPress Developer">
+<meta property="og:description" content="I build WordPress sites and run the servers they live on. 7 years, 20+ sites, self-managed Nginx VPS.">
+<meta property="og:type" content="website">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="style.css">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚙️</text></svg>">
 </head>
 <body>
 
@@ -14,10 +17,20 @@
 
 <header class="site-header">
   <div class="wrap header-inner">
-    <a class="brand" href="/">Maha&nbsp;Abid</a>
+    <a class="brand" href="/" aria-label="Maham Abid — home">
+      <svg class="mark" viewBox="0 0 110 100" aria-hidden="true" focusable="false">
+        <g fill="none" stroke-width="11" stroke-linecap="square" stroke-linejoin="miter">
+          <polyline points="12,82 12,20 34,51 56,20 56,82" stroke="currentColor"/>
+          <path d="M51,82 L73,20 L95,82" class="mark-accent"/>
+          <line x1="61" y1="62" x2="85" y2="62" class="mark-accent"/>
+          <polyline points="56,74 56,82" stroke="currentColor"/>
+        </g>
+      </svg>
+      <span class="brand-name">Maham Abid</span>
+    </a>
     <nav aria-label="Main">
       <a href="#work">Work</a>
-      <a href="#services">Services</a>
+      <a href="#freelance">Freelance</a>
       <a href="#stack">Stack</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -33,17 +46,17 @@
       <h1>I build WordPress sites <em>and</em> run the servers they live on.</h1>
       <p class="lede">
         Most WordPress developers stop at the dashboard. I work the whole stack — custom PHP
-        themes on one end, and Nginx, PHP-FPM, MySQL, SSL and WP-CLI on the other. When a
-        plugin can't solve the problem, I still can.
+        themes on one end, and Nginx, PHP-FPM, MySQL, SSL and WP-CLI on the other. When a plugin
+        can't solve the problem, I still can.
       </p>
       <div class="cta-row">
         <a class="btn btn-primary" href="#contact">Get in touch</a>
-        <a class="btn" href="#work">See selected work</a>
+        <a class="btn" href="#work">See my work</a>
       </div>
       <ul class="hero-facts">
+        <li><strong>20+</strong> sites built &amp; maintained</li>
         <li><strong>7</strong> years with WordPress</li>
         <li><strong>Self-managed</strong> Nginx VPS</li>
-        <li><strong>Multi-site</strong> across several domains</li>
       </ul>
     </div>
   </section>
@@ -53,110 +66,179 @@
     <div class="wrap">
       <h2>What I do</h2>
       <div class="grid grid-4">
-
-        <article class="card">
-          <h3>Security &amp; malware recovery</h3>
-          <p>
-            Clean infected core, theme and plugin files, remove injected redirects, rogue admin
-            users and malicious cron jobs — then close the hole that let them in.
-          </p>
-        </article>
-
-        <article class="card">
-          <h3>Speed &amp; Core Web Vitals</h3>
-          <p>
-            Real optimisation work: server-side and object caching, image pipelines, render-blocking
-            cleanup, database and autoload tuning. Not just a cache plugin.
-          </p>
-        </article>
-
-        <article class="card">
-          <h3>Migrations &amp; VPS setup</h3>
-          <p>
-            Zero-downtime moves between hosts, and full stacks built from scratch — Nginx, PHP-FPM,
-            MySQL, Let's Encrypt, firewall, automated backups, staging subdomains.
-          </p>
-        </article>
-
         <article class="card">
           <h3>Custom theme development</h3>
-          <p>
-            PHP template work — custom front-page templates, post types, navigation systems and
-            responsive components built by hand rather than dragged into place.
-          </p>
+          <p>PHP template work — child themes, custom front-page templates, post types and
+             navigation systems built by hand rather than dragged into place.</p>
+        </article>
+        <article class="card">
+          <h3>Speed &amp; Core Web Vitals</h3>
+          <p>Server-side and object caching, image pipelines, render-blocking cleanup, database
+             and autoload tuning. Not just a cache plugin.</p>
+        </article>
+        <article class="card">
+          <h3>Security &amp; malware recovery</h3>
+          <p>Clean infected files, remove injected redirects, rogue admin users and malicious
+             cron jobs — then close the hole that let them in.</p>
+        </article>
+        <article class="card">
+          <h3>Migrations &amp; VPS setup</h3>
+          <p>Zero-downtime moves between hosts, and full stacks built from scratch — Nginx,
+             PHP-FPM, MySQL, Let's Encrypt, firewall, backups, staging.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PRODUCT WORK ===================== -->
+  <section id="work">
+    <div class="wrap">
+      <h2>Product &amp; platform sites</h2>
+      <p class="section-note">
+        Developed as part of the web team at <strong>Programmers Force</strong>, a Lahore-based AI
+        company — a portfolio of B2B SaaS products across identity verification, compliance,
+        fintech and workforce tooling. Mostly custom WordPress child themes.
+      </p>
+
+      <div class="grid grid-3">
+
+        <article class="item">
+          <h3><a href="https://facia.ai" rel="noopener">Facia</a></h3>
+          <p>Deepfake and liveness detection for identity verification and authentication.</p>
+          <ul class="tags"><li>WordPress</li><li>Child theme</li></ul>
+        </article>
+
+        <article class="item">
+          <h3><a href="https://amlwatcher.com" rel="noopener">AML Watcher</a></h3>
+          <p>AI-powered anti-money-laundering platform — sanctions, PEP, adverse media and risk
+             intelligence screening.</p>
+          <ul class="tags"><li>WordPress</li><li>Astra</li></ul>
+        </article>
+
+        <article class="item">
+          <h3><a href="https://thekyb.com" rel="noopener">The KYB</a></h3>
+          <p>Know-Your-Business verification platform for global corporate due diligence.</p>
+          <ul class="tags"><li>WordPress</li><li>Child theme</li></ul>
+        </article>
+
+        <article class="item">
+          <h3><a href="https://programmersforce.com" rel="noopener">Programmers Force</a></h3>
+          <p>The parent company site — AI solutions across multiple business sectors.</p>
+          <ul class="tags"><li>WordPress</li></ul>
+        </article>
+
+        <article class="item">
+          <h3><a href="https://ml1.ai" rel="noopener">ML1</a></h3>
+          <p>Machine learning products for operations automation.</p>
+          <ul class="tags"><li>WordPress</li><li>Child theme</li></ul>
+        </article>
+
+        <article class="item">
+          <h3><a href="https://cappersoft.com" rel="noopener">Cappersoft</a></h3>
+          <p>Human-in-the-loop data labelling and training data for computer vision and NLP models.</p>
+          <ul class="tags"><li>WordPress</li></ul>
+        </article>
+
+        <article class="item">
+          <h3><a href="https://bpro.ai" rel="noopener">BPro</a></h3>
+          <p>Online bookkeeping and corporate tax management service.</p>
+          <ul class="tags"><li>WordPress</li><li>Astra</li></ul>
+        </article>
+
+        <article class="item">
+          <h3><a href="https://hrint.io" rel="noopener">HR Int</a></h3>
+          <p>International HR services — customised, career-oriented recruitment solutions.</p>
+          <ul class="tags"><li>WordPress</li><li>Child theme</li></ul>
+        </article>
+
+        <article class="item">
+          <h3><a href="https://marketpro.ai" rel="noopener">Market Pro</a></h3>
+          <p>Full-scale digital marketing agency — SEO, PPC, social, PR and content.</p>
+          <ul class="tags"><li>WordPress</li><li>Child theme</li></ul>
+        </article>
+
+        <article class="item">
+          <h3><a href="https://whistleit.io" rel="noopener">WhistleIt</a></h3>
+          <p>Secure team collaboration platform spanning multiple workspaces and channels.</p>
+          <ul class="tags"><li>WordPress</li></ul>
+        </article>
+
+        <article class="item">
+          <h3><a href="https://gigstimer.com" rel="noopener">Gigstimer</a></h3>
+          <p>Free time-tracking and task management software for distributed teams.</p>
+          <ul class="tags"><li>WordPress</li><li>Child theme</li></ul>
+        </article>
+
+        <article class="item">
+          <h3><a href="https://stafftimerapp.com" rel="noopener">StaffTimer App</a></h3>
+          <p>Staff time tracking and productivity monitoring for remote teams.</p>
+          <ul class="tags"><li>WordPress</li></ul>
+        </article>
+
+        <article class="item">
+          <h3><a href="https://techub.com.pk" rel="noopener">Techub</a></h3>
+          <p>Coworking space brand — built on a bespoke in-house theme rather than a
+             third-party one.</p>
+          <ul class="tags"><li>WordPress</li><li>Custom theme</li></ul>
         </article>
 
       </div>
     </div>
   </section>
 
-  <!-- ===================== WORK ===================== -->
-  <section id="work">
+  <!-- ===================== FREELANCE ===================== -->
+  <section id="freelance" class="band">
     <div class="wrap">
-      <h2>Selected work</h2>
+      <h2>Freelance client work</h2>
       <p class="section-note">
-        Live sites I designed, built, deployed or maintain.
+        Sites I took on directly with my own clients — scoping, building, deploying and
+        maintaining them end to end.
       </p>
 
-      <div class="grid grid-2">
+      <div class="grid grid-3">
 
-        <article class="project">
-          <h3>Basaltics</h3>
-          <p class="project-role">Corporate website &middot; build &amp; VPS deployment</p>
-          <p>
-            Built and launched the company site on a self-managed Linux VPS, including a custom
-            animated expanding-panel hero section written in PHP, CSS and JavaScript — no page
-            builder. Rebuilt the multi-level navigation and footer, and set up the staging
-            subdomain, SSL and automated backups on the same server.
-          </p>
-          <ul class="tags">
-            <li>WordPress</li><li>Custom PHP theme</li><li>Nginx</li><li>WP-CLI</li><li>Let's Encrypt</li>
-          </ul>
-          <p class="links"><a href="https://basaltics.com" rel="noopener">basaltics.com &rarr;</a></p>
+        <article class="item">
+          <h3><a href="https://coinledger.io" rel="noopener">CoinLedger</a></h3>
+          <p>Crypto tax reporting software supporting 10,000+ currencies, exchanges, NFTs and
+             DeFi protocols.</p>
+          <ul class="tags"><li>Webflow</li></ul>
         </article>
 
-        <article class="project">
-          <h3>ST Basaltics</h3>
-          <p class="project-role">Standalone brand site &middot; built from scratch</p>
-          <p>
-            A separate site built on a custom <code>front-page.php</code> template with an
-            interactive expanding-panel hero and a fully responsive mobile header and footer
-            accordion system. Deployed alongside existing sites on a shared VPS without affecting
-            the other domains.
-          </p>
-          <ul class="tags">
-            <li>WordPress</li><li>Custom PHP template</li><li>Responsive CSS</li><li>Multi-domain VPS</li>
-          </ul>
-          <p class="links"><a href="https://st.basaltics.com" rel="noopener">st.basaltics.com &rarr;</a></p>
+        <article class="item">
+          <h3><a href="https://www.mahmoodgroup.com" rel="noopener">Mahmood Group</a></h3>
+          <p>Corporate site for one of Pakistan's established industrial groups.</p>
+          <ul class="tags"><li>WordPress</li></ul>
         </article>
 
-        <article class="project">
-          <h3>FinRegInsights</h3>
-          <p class="project-role">Security hardening &amp; programmatic publishing</p>
-          <p>
-            Hardened a financial-regulation publication running on WordPress: moved the login to a
-            custom hidden slug, locked down administrator access, and configured secure REST API
-            application-password access so content could be published programmatically without
-            exposing credentials.
-          </p>
-          <ul class="tags">
-            <li>WordPress</li><li>REST API</li><li>Security hardening</li>
-          </ul>
-          <p class="links"><a href="https://finreginsights.com" rel="noopener">finreginsights.com &rarr;</a></p>
+        <article class="item">
+          <h3><a href="https://premierdlc.com" rel="noopener">Premier DLC</a></h3>
+          <p>Corporate website build and deployment.</p>
+          <ul class="tags"><li>WordPress</li></ul>
         </article>
 
-        <article class="project">
-          <h3>MaxiMotors</h3>
-          <p class="project-role">Content audit &amp; AdSense policy recovery</p>
-          <p>
-            Took on an automotive publication rejected by Google AdSense for low-value content.
-            Audited the full post archive, traced and removed duplicated material, rebuilt the
-            required trust and policy pages, and established a sourced, original content process.
-          </p>
-          <ul class="tags">
-            <li>WordPress</li><li>Content auditing</li><li>AdSense policy</li>
-          </ul>
-          <p class="links"><a href="https://maximotors.site" rel="noopener">maximotors.site &rarr;</a></p>
+        <article class="item">
+          <h3><a href="https://www.leathertex.com.pk" rel="noopener">Leathertex Group</a></h3>
+          <p>Website for a leather goods manufacturer and exporter.</p>
+          <ul class="tags"><li>WordPress</li><li>Elementor</li></ul>
+        </article>
+
+        <article class="item">
+          <h3><a href="https://pakendosociety.org" rel="noopener">Pakistan Endocrine Society</a></h3>
+          <p>Membership and events site for a national medical professional body.</p>
+          <ul class="tags"><li>WordPress</li><li>Events</li></ul>
+        </article>
+
+        <article class="item">
+          <h3><a href="https://alfazaltensileconcept.com" rel="noopener">Al-Fazal Tensile Concept</a></h3>
+          <p>Catalogue site for a tensile structures and shade manufacturer — parking shades,
+             canopies, marquees.</p>
+          <ul class="tags"><li>WordPress</li></ul>
+        </article>
+
+        <article class="item">
+          <h3><a href="http://fundraisersbbs.com" rel="noopener">The Fundraisers BBS</a></h3>
+          <p>Website for a fundraising organisation.</p>
+          <ul class="tags"><li>WordPress</li></ul>
         </article>
 
       </div>
@@ -164,52 +246,40 @@
   </section>
 
   <!-- ===================== BEYOND WORDPRESS ===================== -->
-  <section class="band">
+  <section>
     <div class="wrap">
       <h2>Beyond WordPress</h2>
       <p class="section-note">Things I've built that aren't websites.</p>
-
       <div class="grid grid-2">
-
-        <article class="project">
+        <article class="card">
           <h3>Automated video publishing pipeline</h3>
           <p class="project-role">Python &middot; FFmpeg &middot; YouTube Data API</p>
-          <p>
-            An end-to-end content pipeline running unattended on a VPS: pulls rows from a
-            spreadsheet, renders each into a video with FFmpeg, and publishes to YouTube on a
-            schedule via the Data API — driven entirely by cron, with no manual step.
-          </p>
-          <ul class="tags">
-            <li>Python</li><li>FFmpeg</li><li>YouTube Data API</li><li>cron</li><li>Linux</li>
-          </ul>
+          <p>An end-to-end pipeline running unattended on a VPS: pulls rows from a spreadsheet,
+             renders each into a video with FFmpeg, and publishes to YouTube on a schedule via the
+             Data API — driven entirely by cron, with no manual step.</p>
+          <ul class="tags"><li>Python</li><li>FFmpeg</li><li>YouTube API</li><li>cron</li><li>Linux</li></ul>
         </article>
-
-        <article class="project">
+        <article class="card">
           <h3>Mobile puzzle games</h3>
           <p class="project-role">Flutter &middot; Android &middot; AdMob</p>
-          <p>
-            Three puzzle games built in Flutter for Android, with AdMob integration behind a build
-            flag so test builds never serve live ads, and a managed signing-key workflow for
-            release builds.
-          </p>
-          <ul class="tags">
-            <li>Flutter</li><li>Dart</li><li>Android</li><li>AdMob</li>
-          </ul>
+          <p>Three puzzle games built in Flutter for Android, with AdMob integration behind a build
+             flag so test builds never serve live ads, and a managed signing-key workflow for
+             release builds.</p>
+          <ul class="tags"><li>Flutter</li><li>Dart</li><li>Android</li><li>AdMob</li></ul>
         </article>
-
       </div>
     </div>
   </section>
 
   <!-- ===================== STACK ===================== -->
-  <section id="stack">
+  <section id="stack" class="band">
     <div class="wrap">
       <h2>Technical stack</h2>
       <div class="grid grid-3 stack-grid">
         <div>
           <h3>WordPress</h3>
           <ul class="plain">
-            <li>Custom theme development (PHP)</li>
+            <li>Custom theme &amp; child theme development</li>
             <li>Custom post types &amp; templates</li>
             <li>WP-CLI automation</li>
             <li>REST API</li>
@@ -244,34 +314,28 @@
   </section>
 
   <!-- ===================== HOW I WORK ===================== -->
-  <section class="band">
+  <section>
     <div class="wrap narrow">
       <h2>How I work</h2>
-      <p>
-        I tell you what's actually wrong before I touch anything. I work on a staging copy
-        wherever the setup allows it, so your live site isn't the test environment. And I send a
-        written summary of every change I make — so you're never locked into me as the only
-        person who understands your own site.
-      </p>
-      <p>
-        If a job isn't worth doing, I'll say so. That's usually cheaper for both of us than
-        finding out later.
-      </p>
+      <p>I tell you what's actually wrong before I touch anything. I work on a staging copy
+         wherever the setup allows it, so your live site isn't the test environment. And I send a
+         written summary of every change I make — so you're never locked into me as the only
+         person who understands your own site.</p>
+      <p>If a job isn't worth doing, I'll say so. That's usually cheaper for both of us than
+         finding out later.</p>
     </div>
   </section>
 
   <!-- ===================== CONTACT ===================== -->
-  <section id="contact">
+  <section id="contact" class="band">
     <div class="wrap narrow">
       <h2>Get in touch</h2>
-      <p class="lede">
-        Available for remote contract and full-time work. If your site is slow, broken or
-        infected, say what's happening and I'll tell you what it'll take.
-      </p>
+      <p class="lede">Available for remote contract and full-time work. If your site is slow,
+         broken or infected, tell me what's happening and I'll tell you what it'll take.</p>
       <ul class="contact-list">
         <li><span>Email</span> <a href="mailto:mahamabid600@gmail.com">mahamabid600@gmail.com</a></li>
+        <li><span>LinkedIn</span> <a href="https://www.linkedin.com/in/maham-sh/" rel="noopener">linkedin.com/in/maham-sh</a></li>
         <li><span>GitHub</span> <a href="https://github.com/maha-abid" rel="noopener">github.com/maha-abid</a></li>
-        <li><span>LinkedIn</span> <a href="#" rel="noopener">[LINKEDIN URL YAHAN]</a></li>
         <li><span>Location</span> Lahore, Pakistan &middot; PKT (UTC+5)</li>
       </ul>
     </div>
@@ -281,14 +345,12 @@
 
 <footer class="site-footer">
   <div class="wrap">
-    <p>&copy; <span id="yr">2026</span> Maha Abid</p>
-    <p class="colophon">
-      Hand-written HTML and CSS. No framework, no build step, no JavaScript libraries —
-      which is rather the point.
-    </p>
+    <p>&copy; <span id="yr">2026</span> Maham Abid</p>
+    <p class="colophon">Hand-written HTML and CSS. No framework, no build step, no JavaScript
+       libraries — which is rather the point.</p>
   </div>
 </footer>
 
-<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
 </body>
 </html>

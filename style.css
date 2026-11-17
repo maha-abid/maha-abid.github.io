@@ -79,8 +79,8 @@ a:hover { text-decoration: underline; }
 }
 .brand:hover { text-decoration: none; }
 .brand:hover .brand-name { color: var(--accent); }
-.mark { width: 30px; height: 27px; display: block; flex: none; }
-.mark-accent { stroke: var(--accent); }
+.mark { width: 28px; height: 28px; display: block; flex: none; }
+.mark-accent { fill: var(--accent); }
 .brand-name { transition: color .15s; }
 .site-header nav { display: flex; gap: 26px; }
 .site-header nav a { color: var(--text-soft); font-size: 15px; }
